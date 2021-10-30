@@ -23,7 +23,11 @@ p {
 }
 
 section {
-  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.section-home {
+  padding-top: 0;
 }
 
 /* nav */
