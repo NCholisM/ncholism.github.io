@@ -61,7 +61,7 @@ section {
   margin-right: 0;
 }
 
-.desktop-nav .menu-items li a.active::after {
+/* .desktop-nav .menu-items li a.active::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -69,7 +69,7 @@ section {
   background: #6cd0db;
   left: 0;
   bottom: -12px;
-}
+} */
 
 .desktop-nav .menu-items li a {
   text-decoration: none;
@@ -251,8 +251,12 @@ section h2::after {
 /* galeri */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0 40px;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 20px 0;
+  position: relative;
+  /* grid-gap: 0 40px; */
+  /* align-items: center; */
   /* margin-bottom: 42px; */
   /* justify-content: center; */
 }
@@ -261,6 +265,7 @@ section h2::after {
   box-shadow: 10px 10px 11px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -328,11 +333,21 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.footer-container {
+/* .footer-container {
   display: flex;
   justify-content: space-between;
   padding: 50px 100px 32px 100px;
+} */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px 32px 100px;
 }
+
+.footer-nav {
+  text-align: center; /* Menengahkan teks */
+}
+
 
 .footer-container ul {
   margin-top: 30px;
@@ -360,6 +375,11 @@ footer a:hover {
 .footer-container .footer-social a img {
   transition: 500ms;
 }
+.footer-social a i {
+  /* color: #007BFF; Warna biru */
+  font-size: 30px; /* Ukuran 24 piksel */
+  margin-right: 10px; /* Margin antar ikon */
+}
 
 .footer-container .footer-social a img:hover {
   transform: scale(1.2);
@@ -377,7 +397,7 @@ footer a:hover {
 }
 
 /* media */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .wrapper {
     padding: 0;
     width: auto;
@@ -481,7 +501,7 @@ footer a:hover {
   }
 
   .says .slide-container img {
-    width: 150px;
+    /* width: 150px; */
     margin: 0 auto;
     order: -1;
   }
