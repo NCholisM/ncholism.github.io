@@ -372,16 +372,17 @@ footer a:hover {
   margin-left: 0;
 }
 
-.footer-container .footer-social a img {
+.footer-container .footer-social a i {
   transition: 500ms;
 }
 .footer-social a i {
-  /* color: #007BFF; Warna biru */
-  font-size: 30px; /* Ukuran 24 piksel */
-  margin-right: 10px; /* Margin antar ikon */
+  
+  font-size: 30px;
+  /* margin-right: 10px;  */
+  margin-left: 10px;
 }
 
-.footer-container .footer-social a img:hover {
+.footer-container .footer-social a i:hover {
   transform: scale(1.2);
 }
 
