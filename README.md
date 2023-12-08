@@ -5,7 +5,6 @@ Ini adalah repositori untuk web resume sederhana milik Muchamat Nur Cholis Ma'ru
 ## Biodata
 
 - **Nama:** Muchamat Nur Cholis Ma'ruf
-- **Alamat:** Jl. Karah IV No. 54 B
 - **Nomor Telepon:** 08990092108
 - **Email:** cholis789rt@gmail.com
 - **Tanggal Lahir:** 22 Januari 2000
