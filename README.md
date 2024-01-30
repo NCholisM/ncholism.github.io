@@ -2,6 +2,11 @@
 
 Ini adalah repositori untuk web resume sederhana milik Muchamat Nur Cholis Ma'ruf. Di sini, anda dapat menemukan informasi tentang biodata dan detail pribadi.
 
+Link Akses : https://ncholism.github.io/
+
+## Screenshot
+![screencapture-ncholism-github-io-2024-01-30-16_57_03](https://github.com/NCholisM/ncholism.github.io/assets/57277402/70d0a884-da1d-401b-ab4f-35c55f7596cd)
+
 ## Biodata
 
 - **Nama:** Muchamat Nur Cholis Ma'ruf
