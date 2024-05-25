@@ -4,83 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="Glider.js-master/glider.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="img/me.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="shortcut icon" href="img/me.png" type="image/x-icon" />
+
     <title>CHOLIS Web</title>
   </head>
   <body>
     <div class="wrapper">
+      <!-- Mobile Navigation -->
       <div class="mobile-nav">
         <ul class="menu-items">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About Me</a>
-          </li>
-          <li>
-            <a href="#gallery">Certificate</a>
-          </li>
-          <li>
-            <a href="#say">Experience</a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#gallery">Certificate</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#say">Experience</a></li>
         </ul>
       </div>
+
+      <!-- Home Section -->
       <section class="section-home" id="home">
         <nav class="desktop-nav">
           <div class="menu-icon">
-            <img src="img/menu.svg" alt="" />
+            <img src="img/menu.svg" alt="Menu Icon" />
           </div>
-
           <ul class="menu-items">
-            <li>
-              <a href="#home" class="active">Home</a>
-            </li>
-            <li>
-              <a href="#about">About Me</a>
-            </li>
-            <li>
-              <a href="#gallery">Certificate</a>
-            </li>
-            <li>
-              <a href="#say">Experience</a>
-            </li>
-            <li>
-              <a href="" class=""></a>
-            </li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#gallery">Certificate</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#say">Experience</a></li>
+            <li><a href=""></a></li>
           </ul>
         </nav>
-        <!-- end nav -->
 
         <header class="hero-container">
-          <img class="bg4" src="img/welcome.svg" alt="" />
+          <img class="bg4" src="img/welcome.svg" alt="Welcome Background" />
           <div class="left">
             <p>Welcome to</p>
             <h1><span class="cholis">CHOLIS</span> Web Resume</h1>
-            <!-- <a href="" class="btn">Sign In</a> -->
           </div>
-
           <div class="right">
-            <img src="img/welcome.svg" alt="" />
+            <img src="img/welcome.svg" alt="Welcome Image" />
           </div>
-
-          <img class="bg" src="img/bg.svg" alt="" />
-
+          <img class="bg" src="img/bg.svg" alt="Background Image" />
           <div class="circle-container">
-            <img class="circle" src="img/circle.svg" alt="" />
+            <img class="circle" src="img/circle.svg" alt="Circle Image" />
           </div>
         </header>
       </section>
 
-      <!-- end hero -->
-
+      <!-- About Section -->
       <section id="about" class="about-section">
         <h2>About Me</h2>
         <div class="section-content">
@@ -90,62 +87,365 @@
             class="about-description"
           >
             <p>
-              Nama saya <strong>Muchamat Nur Cholis Ma'ruf</strong>.
-              Saya adalah seorang fresh graduate dari Institut Teknologi Adhi Tama Surabaya dengan latar belakang jurusan Sistem Informasi dan berhasil menyelesaikan kuliah saya dengan IPK 3,59. 
-              Dan telah memperoleh pemahaman dasar dalam pemrograman web termasuk <strong>HTML, PHP, dan SQL</strong> selama kuliah.
-              Saya sangat tertarik pada pengembangan perangkat lunak, analisis data, dan manajemen informasi. 
-              Saya juga pernah mengambil kesempatan untuk magang selama satu bulan di PT Telkom, di mana saya mendapatkan wawasan berharga tentang industri teknologi dan pengalaman dalam bekerja dalam tim. 
-              Meskipun saya belum memiliki pengalaman kerja yang signifikan, saya sangat antusias untuk belajar dan berkontribusi dalam industri teknologi. 
-              Saya memiliki kemampuan analisis yang baik, kemampuan pemecahan masalah, serta komitmen untuk terus mengembangkan diri dalam bidang ini.      
+              Nama saya <strong>Muchamat Nur Cholis Ma'ruf</strong>. Saya adalah
+              seorang fresh graduate dari Institut Teknologi Adhi Tama Surabaya
+              dengan latar belakang jurusan Sistem Informasi dan berhasil
+              menyelesaikan kuliah saya dengan IPK 3,59. Dan telah memperoleh
+              pemahaman dasar dalam pemrograman web termasuk
+              <strong>HTML, PHP, dan SQL</strong> selama kuliah. Saya sangat
+              tertarik pada pengembangan perangkat lunak, analisis data, dan
+              manajemen informasi. Saya juga pernah mengambil kesempatan untuk
+              magang selama satu bulan di PT Telkom, di mana saya mendapatkan
+              wawasan berharga tentang industri teknologi dan pengalaman dalam
+              bekerja dalam tim. Meskipun saya belum memiliki pengalaman kerja
+              yang signifikan, saya sangat antusias untuk belajar dan
+              berkontribusi dalam industri teknologi. Saya memiliki kemampuan
+              analisis yang baik, kemampuan pemecahan masalah, serta komitmen
+              untuk terus mengembangkan diri dalam bidang ini.
             </p>
-            
           </div>
-
           <div data-aos="zoom-in" data-aos-duration="1500">
-            <img src="img/me.png" alt="" />
+            <img class="me" src="img/me.png" alt="My Picture" />
           </div>
         </div>
-        <img class="bg2" src="img/bg2.svg" alt="" />
+        <img class="bg2" src="img/bg2.svg" alt="Background Image 2" />
       </section>
-      <!-- end about -->
 
+      <!-- Gallery Section -->
       <section id="gallery" class="gallery-section">
         <h2>Certificate</h2>
-        <div class="gallery">
-          <img
-            data-aos="fade-down-right"
-            data-aos-duration="1000"
-            src="img/progate.png"
-            alt=""
-          />
-          <img
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-            src="img/revou.png"
-            alt=""
-          />
-          <img
-            data-aos="fade-down-right"
-            data-aos-duration="1000"
-            src="img/myskill.png"
-            alt=""
-          />
-          <!-- <img
-            data-aos="fade-up-left"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-            src="img/wewed2.png"
-            alt=""
-          /> -->
+        <div id="lightgallery" class="gallery">
+          <a href="img/progate.png">
+            <img alt="Certificate Progate" src="img/progate.png" />
+          </a>
+          <a href="img/myskill.png">
+            <img alt="Certificate MySkill" src="img/myskill.png" />
+          </a>
+          <a href="img/revou.png">
+            <img alt="Certificate RevoU" src="img/revou.png" />
+          </a>
+          <a href="img/prakerja.png">
+            <img alt="Certificate Prakerja" src="img/prakerja.png" />
+          </a>
+          <a href="img/talenta.png">
+            <img alt="Certificate TalentaAI" src="img/talenta.png" />
+          </a>
         </div>
       </section>
-      <img class="bg3" src="img/bg3.svg" alt="" />
+      <img class="bg3" src="img/bg3.svg" alt="Background Image 3" />
 
-      <!-- end galeri -->
+      <!-- Project Section -->
+      <section id="project" class="project-section">
+        <h2>Project</h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center"
+        >
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/kmeanscluster"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >kmeanscluster</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Implementasi algoritma K-Means Clustering
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #4f5d95"
+                >PHP</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/projectvuevel"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >projectvuevel</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Proyek CRUD sederhana menggunakan Vue dan Laravel
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #ef3b2d"
+                >Laravel</span
+              >
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #41b883"
+                >Vue</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/belajarlaravel"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >belajarlaravel</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Proyek CRUD sederhana yang dibuat menggunakan Laravel
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #ef3b2d"
+                >Laravel</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/fastprintci3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >fastprintci3</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Hasil tes programmer Fast Print Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #bc1b05"
+                >CodeIgniter</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/energeek"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >energeek</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Hasil tes programmer Energeek
+                    <br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #ef3b2d"
+                >Laravel</span
+              >
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #41b883"
+                >Vue</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+          <!-- Start -->
+          <div
+            class="max-w-sm rounded overflow-hidden m-4"
+            style="
+              background-color: #3c3c3c;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <div class="px-6 py-4">
+              <div class="flex items-center">
+                <img
+                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
+                  src="https://avatars.githubusercontent.com/u/57277402?v=4"
+                  alt="Avatar"
+                  onclick="openInNewTab('https://github.com/NCholisM/')"
+                />
+                <div class="text-sm">
+                  <p class="text-zinc-900 dark:text-white leading-none">
+                    NCholisM/
+                  </p>
+                  <p
+                    class="text-zinc-900 dark:text-white font-bold leading-none"
+                  >
+                    <a
+                      href="https://github.com/NCholisM/ttg_test"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text-color"
+                      >ttg_test</a
+                    >
+                  </p>
+                  <br />
+                  <p class="text-zinc-900 dark:text-zinc-400 no-gap">
+                    Hasil tes programmer Tim Teknologi Global
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #ef3b2d"
+                >Laravel</span
+              >
+              <span
+                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 dark:text-zinc-200 mr-2 mb-2"
+                style="background-color: #41b883"
+                >Vue</span
+              >
+            </div>
+          </div>
+          <!-- End  -->
+        </div>
+      </section>
     </div>
 
+    <!-- Experience Section -->
     <section id="say" class="say-section">
-      <!-- <div class="wrapper"> -->
       <h2>Experience</h2>
       <div class="say-container">
         <div class="say">
@@ -153,40 +453,38 @@
             <div class="slide-container">
               <div class="content">
                 <p>
-                  • Membuat model database web pemeliharaan CME (Civil Mechanical Electrical) <br>
-                  • Membuat script backup otomatis menggunakan cron job database web pemeliharaan CME <br>
-                  • Menampilkan data atau summary report jumlah perangkat yang telah dilakukan pemeliharaan pada database web pemeliharaan CME
+                  • Membuat model database web pemeliharaan CME (Civil
+                  Mechanical Electrical) <br />
+                  • Membuat script backup otomatis menggunakan cron job database
+                  web pemeliharaan CME <br />
+                  • Menampilkan data atau summary report jumlah perangkat yang
+                  telah dilakukan pemeliharaan pada database web pemeliharaan
+                  CME
                 </p>
                 <div class="name">
                   <strong>PT Telkom Regional V</strong>, Magang 1 Bulan
                 </div>
               </div>
-              <img src="img/telkom.png" alt="" width="200" height="200"/>
+              <img
+                src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594112709392_compress_PNG%20Logo%20Primer%20Telkom.png"
+                alt="Telkom Logo"
+                width="250"
+                height="200"
+              />
             </div>
           </div>
-
-          <!-- <div class="says">
-            <div class="slide-container">
-              <div class="content">
-                <p>Cholis Ganteng</p>
-                <div class="name">
-                  <strong>Wewed Prameswari</strong>, Pacar w
-                </div>
-              </div>
-              <img src="img/wewed4.png" alt="" />
-            </div>
-          </div> -->
         </div>
-        <span class="slider-prev"><img src="img/left.svg" alt="" /></span>
-        <span class="slider-next"><img src="img/right.svg" alt="" /></span>
+        <span class="slider-prev"
+          ><img src="img/left.svg" alt="Previous"
+        /></span>
+        <span class="slider-next"><img src="img/right.svg" alt="Next" /></span>
         <div role="tablist" class="dots-container">
           <div class="dots"></div>
         </div>
       </div>
-      <!-- </div> -->
     </section>
-    <!-- end say -->
 
+    <!-- Footer -->
     <footer>
       <div class="wrapper">
         <div class="footer-container">
@@ -194,56 +492,62 @@
             <h3>Contact</h3>
             <div class="footer-social">
               <a href="mailto:cholis789rt@gmail.com">
-                <i class="fas fa-envelope"></i> 
+                <i class="fas fa-envelope"></i>
               </a>
               <a href="https://wa.me/+628990092108">
-                <i class="fab fa-whatsapp"></i> <!-- Ikon WhatsApp -->
+                <i class="fab fa-whatsapp"></i>
               </a>
-              
-              <!-- Anda dapat menambahkan ikon lainnya sesuai kebutuhan -->
             </div>
             <div class="footer-social">
-              
               <a href="https://www.instagram.com/ncholism_">
-                <i class="fab fa-instagram"></i> <!-- Ikon Instagram -->
+                <i class="fab fa-instagram"></i>
               </a>
               <a href="https://github.com/NCholisM">
-                <i class="fab fa-github"></i> <!-- Ikon GitHub -->
+                <i class="fab fa-github"></i>
               </a>
-              <!-- Anda dapat menambahkan ikon lainnya sesuai kebutuhan -->
             </div>
           </div>
         </div>
       </div>
-      <p class="copyright" id="tahun-copyright">Dari Cholis untuk Cholis &copy;2021 - <span id="tahun"></span></p>
+      <p class="copyright" id="tahun-copyright">
+        Dari Cholis untuk Cholis &copy;2021 - <span id="tahun"></span>
+      </p>
       <script>
-        // Mendapatkan elemen span yang menunjukkan tahun
-        var tahunSpan = document.getElementById("tahun");
-      
-        // Mendapatkan tahun saat ini
-        var tahunSaatIni = new Date().getFullYear();
-      
-        // Memperbarui teks tahun pada elemen span
-        tahunSpan.innerHTML = tahunSaatIni;
+        // Update year in the footer
+        document.getElementById("tahun").innerText = new Date().getFullYear();
       </script>
-      
     </footer>
+
+    <!-- Scripts -->
+    <script src="Glider.js-master/glider.min.js"></script>
+    <script>
+      new Glider(document.querySelector(".say"), {
+        slidesToShow: 1,
+        dots: ".dots",
+        arrows: {
+          prev: ".slider-prev",
+          next: ".slider-next",
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lightGallery(document.getElementById("lightgallery"), {
+          download: false,
+        });
+      });
+    </script>
+    <script>
+      function openInNewTab(url) {
+        var win = window.open(url, "_blank");
+        win.focus();
+      }
+    </script>
   </body>
 </html>
-
-<script src="Glider.js-master/glider.min.js"></script>
-<script>
-  new Glider(document.querySelector(".say"), {
-    slidesToShow: 1,
-    dots: ".dots",
-    arrows: {
-      prev: ".slider-prev",
-      next: ".slider-next",
-    },
-  });
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="main.js"></script>
-<script>
-  AOS.init();
-</script>
