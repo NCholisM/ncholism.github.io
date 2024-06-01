@@ -577,3 +577,10 @@ footer a:hover {
 .hover-text-color:hover {
   color: #6CD0DB; /* Ganti dengan kode hex yang Anda inginkan */
 }
+
+.preview {
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+.preview:hover {
+  transform: scale(1.1); /* Scale the image up by 10% */
+}
