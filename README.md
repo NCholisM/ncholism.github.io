@@ -5,7 +5,7 @@ Ini adalah repositori untuk web resume sederhana milik Muchamat Nur Cholis Ma'ru
 Link Akses : https://ncholism.github.io/
 
 ## Screenshot
-![screencapture-127-0-0-1-5500-index-html-2024-05-25-14_57_18](https://github.com/NCholisM/ncholism.github.io/assets/57277402/fde79ad1-caaa-4b2c-8130-149992074e29)
+![screencapture-ncholism-github-io-2024-06-03-12_30_29](https://github.com/NCholisM/ncholism.github.io/assets/57277402/bff08ef5-f919-416a-b2e6-fb53f2d09040)
 
 ## Biodata
 
