@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set, compatibility, and viewport settings -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Resume Cholis" />
+    <meta
+      name="keywords"
+      content="web resume cholis, cholis ganteng, cholis itats"
+    />
+    <meta name="author" content="Nur Cholis" />
 
-    <!-- Stylesheets -->
+    <!-- External Stylesheets -->
+    <!-- Main stylesheet for custom styling -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Glider.js stylesheet for the carousel component -->
     <link rel="stylesheet" href="Glider.js-master/glider.min.css" />
+
+    <!-- AOS (Animate On Scroll) stylesheet for scroll animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Font Awesome stylesheet for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+
+    <!-- Lightgallery stylesheet for image gallery functionality -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
@@ -21,24 +37,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
     />
+
+    <!-- Shortcut icon for the website -->
     <link rel="shortcut icon" href="img/me.png" type="image/x-icon" />
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
+    <!-- Montserrat for bold font, and Poppins for body text -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Page Title -->
     <title>CHOLIS Web</title>
   </head>
+
   <body>
     <div class="wrapper">
       <!-- Mobile Navigation -->
       <div class="mobile-nav">
+        <!-- Menu items for mobile navigation -->
         <ul class="menu-items">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#gallery">Certificate</a></li>
+          <li><a href="#skills">Skill</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#say">Experience</a></li>
         </ul>
@@ -46,20 +70,27 @@
 
       <!-- Home Section -->
       <section class="section-home" id="home">
+        <!-- Desktop Navigation -->
         <nav class="desktop-nav">
+          <!-- Menu icon (typically used for mobile view) -->
           <div class="menu-icon">
             <img src="img/menu.svg" alt="Menu Icon" />
           </div>
+
+          <!-- Menu items for desktop navigation -->
           <ul class="menu-items">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#gallery">Certificate</a></li>
+            <li><a href="#skills">Skill</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#say">Experience</a></li>
             <li><a href=""></a></li>
           </ul>
         </nav>
 
+        <!-- Hero Container -->
         <header class="hero-container">
           <img class="bg4" src="img/welcome.svg" alt="Welcome Background" />
           <div class="left">
@@ -70,6 +101,8 @@
             <img src="img/welcome.svg" alt="Welcome Image" />
           </div>
           <img class="bg" src="img/bg.svg" alt="Background Image" />
+
+          <!-- Circle effect in the background -->
           <div class="circle-container">
             <img class="circle" src="img/circle.svg" alt="Circle Image" />
           </div>
@@ -80,58 +113,176 @@
       <section id="about" class="about-section">
         <h2>About Me</h2>
         <div class="section-content">
+          <!-- About description with animation -->
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
             class="about-description"
           >
             <p>
-              Nama saya <strong>Muchamat Nur Cholis Ma'ruf</strong>. Saya adalah
-              seorang fresh graduate dari Institut Teknologi Adhi Tama Surabaya
-              dengan latar belakang jurusan Sistem Informasi dan berhasil
-              menyelesaikan kuliah saya dengan IPK 3,59. Dan telah memperoleh
-              pemahaman dasar dalam pemrograman web termasuk
-              <strong>HTML, PHP, dan SQL</strong> selama kuliah. Saya sangat
+              Nama saya <strong>Muchamat Nur Cholis Ma'ruf</strong>, saat ini
+              saya berusia <span id="age"></span> tahun. Saya adalah lulusan
+              dari Institut Teknologi Adhi Tama Surabaya dengan latar belakang
+              jurusan Sistem Informasi dan berhasil menyelesaikan kuliah saya
+              dengan IPK 3,59. Selama kuliah, saya memperoleh pemahaman dasar
+              dalam pemrograman web termasuk HTML, PHP, dan SQL. Saya sangat
               tertarik pada pengembangan perangkat lunak, analisis data, dan
               manajemen informasi. Saya juga pernah mengambil kesempatan untuk
-              magang selama satu bulan di PT Telkom, di mana saya mendapatkan
-              wawasan berharga tentang industri teknologi dan pengalaman dalam
-              bekerja dalam tim. Meskipun saya belum memiliki pengalaman kerja
-              yang signifikan, saya sangat antusias untuk belajar dan
-              berkontribusi dalam industri teknologi. Saya memiliki kemampuan
-              analisis yang baik, kemampuan pemecahan masalah, serta komitmen
-              untuk terus mengembangkan diri dalam bidang ini.
+              magang selama satu bulan di PT Telkom Regional V Surabaya, di mana
+              saya mendapatkan wawasan berharga tentang industri teknologi dan
+              pengalaman dalam bekerja dalam tim. Meskipun saya belum memiliki
+              pengalaman kerja yang signifikan, saya sangat antusias untuk
+              belajar dan berkontribusi dalam industri teknologi. Saya memiliki
+              kemampuan analisis yang baik, kemampuan pemecahan masalah, serta
+              komitmen untuk terus mengembangkan diri dalam bidang ini.
             </p>
           </div>
+
+          <!-- Profile image with animation -->
           <div data-aos="zoom-in" data-aos-duration="1500">
             <img class="me" src="img/me.png" alt="My Picture" />
           </div>
         </div>
+
+        <!-- Background image -->
         <img class="bg2" src="img/bg2.svg" alt="Background Image 2" />
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="section-content">
+          <!-- Timeline for education -->
+          <div class="timeline">
+            <!-- Timeline item for each education level -->
+            <div class="timeline-item">
+              <div
+                class="timeline-item-content"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <h1>SDN KARAH 1 SURABAYA</h1>
+                <p>2006 - 2012</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div
+                class="timeline-item-content"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <h1>SMPN 22 SURABAYA</h1>
+                <p>2012 - 2015</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div
+                class="timeline-item-content"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <h1>SMAN 18 SURABAYA</h1>
+                <p>2015 - 2018</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div
+                class="timeline-item-content"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <h1>INSTITUT TEKNOLOGI ADHI TAMA SURABAYA</h1>
+                <p>2018 - 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Gallery Section -->
       <section id="gallery" class="gallery-section">
         <h2>Certificate</h2>
         <div id="lightgallery" class="gallery">
-          <a href="img/progate.png">
-            <img alt="Certificate Progate" src="img/progate.png" />
-          </a>
-          <a href="img/myskill.png">
-            <img alt="Certificate MySkill" src="img/myskill.png" />
-          </a>
-          <a href="img/revou.png">
-            <img alt="Certificate RevoU" src="img/revou.png" />
-          </a>
-          <a href="img/prakerja.png">
-            <img alt="Certificate Prakerja" src="img/prakerja.png" />
-          </a>
-          <a href="img/talenta.png">
-            <img alt="Certificate TalentaAI" src="img/talenta.png" />
-          </a>
+          <!-- Gallery items with certificates -->
+          <a href="img/progate.png"
+            ><img alt="Certificate Progate" src="img/progate.png"
+          /></a>
+          <a href="img/myskill.png"
+            ><img alt="Certificate MySkill" src="img/myskill.png"
+          /></a>
+          <a href="img/revou.png"
+            ><img alt="Certificate RevoU" src="img/revou.png"
+          /></a>
+          <a href="img/prakerja.png"
+            ><img alt="Certificate Prakerja" src="img/prakerja.png"
+          /></a>
+          <a href="img/talenta.png"
+            ><img alt="Certificate TalentaAI" src="img/talenta.png"
+          /></a>
+          <a href="img/alibaba.png"
+            ><img alt="Certificate Alibaba" src="img/alibaba.png"
+          /></a>
+          <a href="img/wordpress.png"
+            ><img alt="Certificate Kelas Wordpress" src="img/wordpress.png"
+          /></a>
+          <a href="img/itfest.png"
+            ><img alt="Certificate IT Fest" src="img/itfest.png"
+          /></a>
         </div>
       </section>
+
+      <!-- Background Image for Gallery Section -->
       <img class="bg3" src="img/bg3.svg" alt="Background Image 3" />
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <!-- Skill Item 1: Web Development -->
+          <div class="skill-item">
+            <i class="fas fa-code skill-icon"></i>
+            <div class="skill-details">
+              <h3>Web Development</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 2: Microsoft Office -->
+          <div class="skill-item">
+            <i class="fas fa-table skill-icon"></i>
+            <div class="skill-details">
+              <h3>Microsoft Office</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 3: Database Management -->
+          <div class="skill-item">
+            <i class="fas fa-database skill-icon"></i>
+            <div class="skill-details">
+              <h3>Database Management</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 4: Networking -->
+          <div class="skill-item">
+            <i class="fas fa-network-wired skill-icon"></i>
+            <div class="skill-details">
+              <h3>Networking</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Project Section -->
       <section id="project" class="project-section">
@@ -140,7 +291,7 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center"
         >
-          <!-- Start -->
+          <!-- Project Card 1 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -155,7 +306,6 @@
               alt="GitHub Repository Preview"
               onclick="openInNewTab('https://github.com/NCholisM/kmeanscluster')"
             />
-
             <div class="px-6 py-4 text-white">
               <div class="flex items-center">
                 <img
@@ -179,8 +329,8 @@
               >
             </div>
           </div>
-          <!-- End  -->
-          <!-- Start -->
+
+          <!-- Project Card 2 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -223,8 +373,8 @@
               >
             </div>
           </div>
-          <!-- End  -->
-          <!-- Start -->
+
+          <!-- Project Card 3 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -262,8 +412,8 @@
               >
             </div>
           </div>
-          <!-- End  -->
-          <!-- Start -->
+
+          <!-- Project Card 4 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -301,56 +451,8 @@
               >
             </div>
           </div>
-          <!-- End  -->
 
-          <!-- Start -->
-          <!-- <div
-            class="max-w-sm rounded overflow-hidden m-4"
-            style="
-              background-color: #3c3c3c;
-              box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.5),
-                0 4px 8px rgba(0, 0, 0, 0.2);
-            "
-          >
-            <img
-              class="cursor-pointer preview"
-              src="https://opengraph.githubassets.com/0/NCholisM/energeek"
-              alt="GitHub Repository Preview"
-              onclick="openInNewTab('https://github.com/NCholisM/energeek')"
-            />
-            <div class="px-6 py-4 text-white">
-              <div class="flex items-center">
-                <img
-                  class="w-10 h-10 rounded-full mr-4 cursor-pointer erupt"
-                  src="img/github.png"
-                  alt="Avatar"
-                  onclick="openInNewTab('https://github.com/NCholisM/energeek')"
-                />
-                <div class="text-sm">
-                  <p class="text-white no-gap">
-                    Hasil tes programmer Energeek
-                    <br />
-                    <br />
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-              <span
-                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
-                style="background-color: #ef3b2d"
-                >Laravel</span
-              >
-              <span
-                class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
-                style="background-color: #41b883"
-                >Vue</span
-              >
-            </div>
-          </div> -->
-          <!-- End  -->
-
-          <!-- Start -->
+          <!-- Project Card 5 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -388,9 +490,8 @@
               >
             </div>
           </div>
-          <!-- End  -->
 
-          <!-- Start -->
+          <!-- Project Card 6 -->
           <div
             class="max-w-sm rounded overflow-hidden m-4"
             style="
@@ -433,7 +534,6 @@
               >
             </div>
           </div>
-          <!-- End  -->
         </div>
       </section>
     </div>
@@ -442,6 +542,7 @@
     <section id="say" class="say-section">
       <h2>Experience</h2>
       <div class="say-container">
+        <!-- Experience Slide 1 -->
         <div class="say">
           <div class="says">
             <div class="slide-container">
@@ -456,7 +557,9 @@
                   CME
                 </p>
                 <div class="name">
-                  <strong>PT Telkom Regional V</strong>, Magang 1 Bulan
+                  <strong>PT Telkom Regional V</strong> - Database Administrator
+                  <br />
+                  Internship September 2021
                 </div>
               </div>
               <img
@@ -468,10 +571,16 @@
             </div>
           </div>
         </div>
-        <span class="slider-prev"
-          ><img src="img/left.svg" alt="Previous"
-        /></span>
-        <span class="slider-next"><img src="img/right.svg" alt="Next" /></span>
+
+        <!-- Navigation arrows -->
+        <span class="slider-prev">
+          <img src="img/left.svg" alt="Previous" />
+        </span>
+        <span class="slider-next">
+          <img src="img/right.svg" alt="Next" />
+        </span>
+
+        <!-- Dots navigation -->
         <div role="tablist" class="dots-container">
           <div class="dots"></div>
         </div>
@@ -482,8 +591,11 @@
     <footer>
       <div class="wrapper">
         <div class="footer-container">
+          <!-- Footer Navigation -->
           <div class="footer-nav">
             <h3>Contact</h3>
+
+            <!-- Social Media Links -->
             <div class="footer-social">
               <a href="mailto:cholis789rt@gmail.com">
                 <i class="fas fa-envelope"></i>
@@ -492,6 +604,7 @@
                 <i class="fab fa-whatsapp"></i>
               </a>
             </div>
+
             <div class="footer-social">
               <a href="https://www.instagram.com/ncholism_">
                 <i class="fab fa-instagram"></i>
@@ -503,46 +616,26 @@
           </div>
         </div>
       </div>
+
+      <!-- Copyright Section -->
       <p class="copyright" id="tahun-copyright">
         Dari Cholis untuk Cholis &copy;2021 - <span id="tahun"></span>
       </p>
+
+      <!-- Script to update the year dynamically -->
       <script>
-        // Update year in the footer
         document.getElementById("tahun").innerText = new Date().getFullYear();
       </script>
     </footer>
 
     <!-- Scripts -->
     <script src="Glider.js-master/glider.min.js"></script>
-    <script>
-      new Glider(document.querySelector(".say"), {
-        slidesToShow: 1,
-        dots: ".dots",
-        arrows: {
-          prev: ".slider-prev",
-          next: ".slider-next",
-        },
-      });
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        lightGallery(document.getElementById("lightgallery"), {
-          download: false,
-        });
-      });
-    </script>
-    <script>
-      function openInNewTab(url) {
-        var win = window.open(url, "_blank");
-        win.focus();
-      }
-    </script>
+
+    <!-- Your custom script -->
+    <script src="main.js" defer></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
