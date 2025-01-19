@@ -756,8 +756,6 @@ footer a:hover {
 
   .timeline-item {
     width: 100%;
-    padding-left: 60px;
-    padding-right: 20px;
   }
 
   .timeline-item:nth-child(even) {
