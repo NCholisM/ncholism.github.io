@@ -379,6 +379,7 @@ section h2::after {
   width: 300px;
   max-width: 100%;
   transition: transform 0.3s ease;
+  flex-direction: column;
 }
 
 .skill-item:hover {
@@ -389,6 +390,10 @@ section h2::after {
   font-size: 40px;
   color: #6cd0db;
   margin-right: 15px;
+}
+
+.skill-details {
+  width: 100%;
 }
 
 .skill-details h3 {
