@@ -52,11 +52,11 @@ section {
 }
 
 .desktop-nav .menu-items li {
-  margin: 0 20px;
+  margin: 0 1px;
 }
 
 .desktop-nav .menu-items li:nth-last-of-type(1) {
-  margin-right: 0;
+  margin-right: 1px;
 }
 
 .desktop-nav .menu-items li a {
@@ -314,7 +314,6 @@ section h2::after {
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
   overflow: hidden;
 }
 
@@ -341,21 +340,6 @@ section h2::after {
   color: #ffffff;
   text-align: center;
   font-style: italic;
-}
-
-.timeline-item-content {
-  animation: fadeInUp 1s ease-in-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Skills Section */
@@ -877,3 +861,97 @@ footer a:hover {
     transform: rotate(360deg);
   }
 }
+
+/* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  top: 2px;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+/* .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+} */
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.menu-items li a.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-items li a.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: transparent; /* Default tidak terlihat */
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.menu-items li a.cta.active:before {
+  background: #b1dae7; /* Aktif hanya pada elemen aktif */
+}
+
+.menu-items li a.cta.active:hover:before {
+  width: 100%; /* Efek hover */
+  background: #b1dae7;
+}
+
+.menu-items li a:hover::before, /* Efek hover saat kursor di atas <a> */
+.menu-items li:hover a::before { /* Efek hover saat kursor di atas <li> */
+  width: 100%; /* Penuh pada elemen */
+  background: #b1dae7; /* Warna latar belakang */
+}
+
+.menu-items li a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Letakkan di bawah teks */
+  left: 0;
+  width: 0;
+  height: 3px; /* Tinggi garis bawah */
+  background: transparent;
+  transition: all 0.3s ease;
+}
+

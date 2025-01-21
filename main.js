@@ -113,3 +113,32 @@ window.addEventListener('scroll', animateProgressBars);
 
 // Trigger once on page load in case some progress bars are already in the viewport
 window.addEventListener('load', animateProgressBars);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuLinks = document.querySelectorAll(".menu-items li a");
+  const sections = document.querySelectorAll("section");
+
+  const activateLink = (id) => {
+    menuLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.dataset.section === id) {
+        link.classList.add("active");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activateLink(entry.target.id);
+        }
+      });
+    },
+    { threshold: 0.5 } // Section dianggap aktif jika 50% terlihat
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
