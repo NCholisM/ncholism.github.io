@@ -314,6 +314,8 @@ section h2::after {
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  overflow: hidden;
 }
 
 .timeline-item-content:hover {
@@ -324,17 +326,19 @@ section h2::after {
 .timeline-item-content h1 {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: #ffffff;
   text-align: center;
-  background: linear-gradient(90deg, #6cd0db, #08456e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(90deg, #6cd0db, #08456e); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   margin-bottom: 10px;
+  z-index: 1;
+  margin-top: 75px;
 }
 
 .timeline-item-content p {
   margin: 10px 0 0;
-  color: #666;
+  color: #ffffff;
   text-align: center;
   font-style: italic;
 }
@@ -818,4 +822,58 @@ footer a:hover {
 }
 .preview:hover {
   transform: scale(1.1); /* Scale the image up by 10% */
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);  z-index: -1;
+}
+
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
