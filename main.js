@@ -142,3 +142,21 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.show-more-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const customList = button.nextElementSibling;
+
+      if (customList.style.display === 'none' || customList.style.display === '') {
+        customList.style.display = 'block';
+        button.textContent = 'Show Less';
+      } else {
+        customList.style.display = 'none';
+        button.textContent = 'Show More';
+      }
+    });
+  });
+});

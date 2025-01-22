@@ -437,21 +437,21 @@ section h2::after {
 /* Experience Section */
 .slide-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 900px;
   margin: 20px auto;
 }
+
+
 
 .slide-container .content {
   padding: 0 24px;
 }
 
-.says .name {
-  background: #3c3c3c;
-  color: white;
-  padding: 8px 20px;
-  display: inline-block;
-  border-radius: 5px;
+.slide-container .content p {
+  z-index: 1;
+  position: relative;
 }
 
 .say-container {
@@ -808,7 +808,6 @@ footer a:hover {
   z-index: -1;
 }
 
-
 .wave:nth-child(2),
 .wave:nth-child(3) {
   top: 210px;
@@ -934,3 +933,62 @@ footer a:hover {
   transition: all 0.3s ease;
 }
 
+/* From Uiverse.io by joe-watson-sbf */ 
+/* .says .name {
+  background: #3c3c3c;
+  color: white;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 5px;
+} */
+
+
+.custom-list {
+  padding-left: 20px; 
+  margin: 16px 0; 
+}
+
+.custom-list-item {
+  position: relative;
+  margin-bottom: 10px; 
+  padding-left: 20px; 
+  font-size: 1rem; 
+  color: #3c3c3c; 
+}
+
+.custom-list-item::before {
+  content: "•"; 
+  position: absolute;
+  left: 0;
+  color: coral; 
+  font-weight: bold;
+}
+
+/* Style the button */
+.show-more-btn {
+  display: block;
+  margin: 15px auto; /* Center horizontally */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.show-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Add some margin around the button */
+.custom-list {
+  margin-top: 20px;
+}
+
+.content img {
+  display: block; /* Prevent inline-block spacing issues */
+  margin: 0 auto; /* Center horizontally */
+}
