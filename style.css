@@ -273,11 +273,12 @@ section h2::after {
   right: -8px;
   width: 16px;
   height: 16px;
-  background: linear-gradient(135deg, #3C3C3C, #3C3C3C);
-  border: 4px solid #fff;
+  background: #005c68;
+  border: 4px solid #005c68;
   border-radius: 50%;
   z-index: 2;
   animation: bounce 1.5s infinite ease-in-out;
+  box-shadow: 0 0 20px 5px #005c68;
 }
 
 .timeline-item:nth-child(even)::before {
@@ -804,7 +805,7 @@ footer a:hover {
   top: 0;
   margin-left: -50%;
   margin-top: -70%;
-  background: linear-gradient(744deg, #3C3C3C, #6E6E6E, #5b42f3, #3C3C3C);
+  background: linear-gradient(744deg, #6CD0DB, #005c68, #4AB7C5);
   z-index: -1;
 }
 
@@ -970,18 +971,44 @@ footer a:hover {
   margin: 15px auto; /* Center horizontally */
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #007bff; /* Button color */
+  color: transparent;
+  background-color: transparent; /* Button color */
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden; /* Hide the border during animation */
+  --border-right: 6px;
+  --animation-color: #3C3C3C;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6); /* Optional text stroke */
 }
 
 /* Hover effect for the button */
 .show-more-btn:hover {
-  background-color: #0056b3;
+  background-color: transparent;
+  color: black; /* Neon color effect */
+  text-shadow: 0 0 5px #3C3C3C, 0 0 10px #3C3C3C, 0 0 20px #3C3C3C; /* Neon glow */
 }
+
+/* Border animation effect (Vertical from left to right) */
+.show-more-btn::before {
+  content: '';
+  position: absolute;
+  left: 0; /* Start the border at the left edge */
+  top: 0;
+  width: var(--border-right); /* Width of the vertical border */
+  height: 100%; /* Full height of the button */
+  background-color: var(--animation-color); /* Border color */
+  transition: left 0.5s ease; /* Animate the border's position */
+}
+
+/* When hovering, move the border from left to right */
+.show-more-btn:hover::before {
+  left: 100%; /* Move the border to the right */
+}
+
 
 /* Optional: Add some margin around the button */
 .custom-list {

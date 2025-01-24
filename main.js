@@ -149,13 +149,15 @@ document.addEventListener('DOMContentLoaded', () => {
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const customList = button.nextElementSibling;
+      const showMoreText = button.getAttribute('data-show-more') || 'Show More';
+      const showLessText = button.getAttribute('data-show-less') || 'Show Less';
 
       if (customList.style.display === 'none' || customList.style.display === '') {
         customList.style.display = 'block';
-        button.textContent = 'Show Less';
+        button.textContent = showLessText; // Teks berubah menjadi "ahg"
       } else {
         customList.style.display = 'none';
-        button.textContent = 'Show More';
+        button.textContent = showMoreText; // Teks berubah menjadi "asd"
       }
     });
   });
