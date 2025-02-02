@@ -1063,13 +1063,25 @@ footer a:hover {
   .contribution-stats {
     width: 200%; /* Buat gambar memenuhi lebar */
   }
+
+  .github-contribution {
+  border: none;
+  box-shadow: none;
+  }
+
+  .github-stats img {
+    pointer-events: none; /* Matikan efek hover */
+  }
+
+  .github-stats img:hover {
+    transform: none !important;
+  }
 }
 
 .github-stats img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-
   margin: 10px;
 }
 
