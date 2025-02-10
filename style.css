@@ -1107,7 +1107,7 @@ footer a:hover {
   width: 50px;
   height: 50px;
   border: 5px solid #ddd;
-  border-top-color: #007bff;
+  border-top-color: #6CD0DB;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
