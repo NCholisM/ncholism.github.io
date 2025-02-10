@@ -163,3 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.body.classList.add("loaded");
+  }, 2000); // Loading screen akan tampil selama 2 detik (2000 ms)
+});
