@@ -980,7 +980,7 @@ footer a:hover {
   text-transform: uppercase;
   overflow: hidden; /* Hide the border during animation */
   --border-right: 6px;
-  --animation-color: #005c68;
+  --animation-color: #6CD0DB;
   letter-spacing: 2px;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6); /* Optional text stroke */
 }
@@ -989,7 +989,7 @@ footer a:hover {
 .show-more-btn:hover {
   background-color: transparent;
   color: black; /* Neon color effect */
-  text-shadow: 0 0 5px #005c68, 0 0 10px #005c68, 0 0 20px #005c68; /* Neon glow */
+  text-shadow: 0 0 5px #6CD0DB, 0 0 10px #6CD0DB, 0 0 20px #6CD0DB; /* Neon glow */
 }
 
 /* Border animation effect (Vertical from left to right) */
