@@ -163,8 +163,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Loading screen akan tampil selama 2 detik (2000 ms)
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.body.classList.add("loaded");
-  }, 3000); // Loading screen akan tampil selama 2 detik (2000 ms)
+  }, 3000); 
 });
+
+// Hilangkan loading screen setelah semua resource selesai dimuat
+// document.addEventListener("DOMContentLoaded", function () {
+//   window.addEventListener("load", function () {
+//     document.body.classList.add("loaded"); 
+//   });
+// });

@@ -1095,7 +1095,7 @@ footer a:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #ffffff;
+  background: #e8e8e8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1103,14 +1103,14 @@ footer a:hover {
 }
 
 /* Loader (Animasi Loading) */
-.loader {
+/* .loader {
   width: 50px;
   height: 50px;
   border: 5px solid #ddd;
   border-top-color: #6CD0DB;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-}
+} */
 
 @keyframes spin {
   from { transform: rotate(0deg); }
@@ -1122,4 +1122,98 @@ body.loaded #loading-screen {
   opacity: 0;
   transition: opacity 0.5s ease-out;
   pointer-events: none;
+}
+
+/* From Uiverse.io by SelfMadeSystem */ 
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  display: flex;
+  margin: 0.25em 0;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite,
+    spin 8s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 270 90;
+  }
+
+  50% {
+    stroke-dasharray: 0 360;
+  }
+
+  100% {
+    stroke-dasharray: 270 90;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  12.5%,
+  25% {
+    rotate: 270deg;
+  }
+
+  37.5%,
+  50% {
+    rotate: 540deg;
+  }
+
+  62.5%,
+  75% {
+    rotate: 810deg;
+  }
+
+  87.5%,
+  100% {
+    rotate: 1080deg;
+  }
 }
