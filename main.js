@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.body.classList.add("loaded");
-  }, 3000); 
+  }, 5000); 
 });
 
 // Hilangkan loading screen setelah semua resource selesai dimuat
