@@ -163,16 +163,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Loading screen akan tampil selama 2 detik (2000 ms)
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
-    document.body.classList.add("loaded");
-  }, 5000); 
-});
+// // Loading screen akan tampil selama 2 detik (2000 ms)
+// document.addEventListener("DOMContentLoaded", function () {
+//   setTimeout(function () {
+//     document.body.classList.add("loaded");
+//   }, 5000); 
+// });
 
-// Hilangkan loading screen setelah semua resource selesai dimuat
+// // Hilangkan loading screen setelah semua resource selesai dimuat
 // document.addEventListener("DOMContentLoaded", function () {
 //   window.addEventListener("load", function () {
 //     document.body.classList.add("loaded"); 
 //   });
 // });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const minLoadingTime = 5000; // 5 detik
+  const startTime = Date.now();
+  
+  window.addEventListener("load", function () {
+    const elapsedTime = Date.now() - startTime;
+    const remainingTime = minLoadingTime - elapsedTime;
+
+    if (remainingTime > 0) {
+      setTimeout(() => {
+        document.body.classList.add("loaded");
+      }, remainingTime);
+    } else {
+      document.body.classList.add("loaded");
+    }
+  });
+});
